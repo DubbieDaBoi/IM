@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&J</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Shop.css" />
+</head>
+
+<body>
+    <section id="Header">
+        <a href="#"><img src="HeaderLogo.png" alt="HLogo"></a>
+        
+        <section id="SearchBar">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search" onkeypress="searchOnEnter(event)">
+                <button type="submit" onclick="performSearch()"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+        
+        <section id="ShoppingIcon">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </section>
+    </section>
+    <section id="HeaderBackground">
+        <!-- Replace 'background-image.jpg' with the actual path to your image -->
+        <img src="Header.jpg" alt="Background Image">
+    </section>
+
+
+    <section id="NavBar">
+        <ul>
+            <li><a href="Start.html">Home</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </section>
+    <section id="Categories">
+        <div class="category">
+            <a href="Order.html">
+                <img src="Bag1.png" alt="Category 3">
+            </a>
+                <h3>Brown - Black Slingbag</h3>
+                <p>$9.99</p>
+            
+        </div>
+        <div class="category">
+            <img src="Bag2.png" alt="Category 3">
+            <h3>Yellow Bag</h3>
+            <p>$9.99</p>
+        </div>
+        <div class="category">
+            <img src="Bag3.png" alt="Category 3">
+            <h3>Louie Viton Brown Bag</h3>
+            <p>$19.99</p>
+        </div>
+        <div class="category">
+            <img src="Bang4.png" alt="Category 3">
+            <h3>Back Slingbag</h3>
+            <p>$4.99</p>
+        </div>
+        <div class="category">
+            <img src="Bag5.png" alt="Category 3">
+            <h3>Cream - Brown bag</h3>
+            <p>$10.99</p>
+        </div>
+        <div class="category">
+            <img src="Bag6.png" alt="Category 3">
+            <h3>Small Black Slingbag</h3>
+            <p>$1.99</p>
+        </div>
+        <div class="category">
+            <img src="Bag7.png" alt="Category 3">
+            <h3>White Slingbag</h3>
+            <p>$9.99</p>
+        </div>
+        <div class="category">
+            <img src="Bag8.png" alt="Category 3">
+            <h3>Brown bag</h3>
+            <p>$3.99</p>
+        </div>
+    </section>
+
+
+    <section id="Footer">
+        <div class="footer-icons">
+            <div class="icon-text-container">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <span>Facebook</span>
+            </div>
+            <div class="icon-text-container">
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+                <span> 0929619177</span>
+            </div>
+        </div>
+        <p><b>@2024 J&J</b></p>
+    </section>
+
+    <script>
+        function searchOnEnter(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        }
+
+        function performSearch() {
+            var searchTerm = document.getElementById('searchInput').value;
+            // Perform your search logic here or redirect to a search results page
+            alert('Searching for: ' + searchTerm);
+        }
+    </script>
+</body>
+
+</html>
